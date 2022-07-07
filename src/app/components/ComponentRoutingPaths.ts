@@ -8,6 +8,8 @@ export class ComponentRoutingPaths {
   }
   public static common = {
     home : "",
+    about:"about",
+    report: "report"
   }
   public static adminControl = {
 

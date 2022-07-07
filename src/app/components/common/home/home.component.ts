@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DialogsService} from "../dialogs/dialogs.service";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private dialogsService:DialogsService
+  ) { }
 
   ngOnInit(): void {
   }
 
+  onProposal() {
+    this.dialogsService.openProposalDialog()
+  }
 }

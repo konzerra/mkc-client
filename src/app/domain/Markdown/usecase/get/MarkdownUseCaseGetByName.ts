@@ -1,5 +1,4 @@
 import {Injectable} from "@angular/core";
-import {ReviewerApi} from "../../../reviewer/ReviewerApi";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {ApiPathUtil} from "../../../../_generic/util/ApiPathUtil";

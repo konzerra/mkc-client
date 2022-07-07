@@ -54,6 +54,7 @@ export class MarkdownUpdateFormGroup
   }
 
   onLangChange(lang:string){
+
     let data = this.dataControlsList.find(data=>
       data.lang == lang
     )

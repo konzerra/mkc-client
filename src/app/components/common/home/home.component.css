@@ -41,7 +41,7 @@ section#\#gates{
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(58, 58, 58, 0.6)
+  background: rgba(58, 58, 58, 0.7)
   url("../../../../assets/images/bank.jpg") no-repeat center center/cover;
   background-blend-mode: multiply;
 }
@@ -108,4 +108,16 @@ h4{
 }
 h6{
   color: white;
+}
+
+.btn-proposal{
+  background-color: rgb(10, 98, 191,0.6);
+
+}
+.btn-proposal:hover{
+  background: linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.5),
+    rgba(91, 14, 214, 0.5) 100%
+  );
 }

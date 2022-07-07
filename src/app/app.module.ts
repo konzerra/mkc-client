@@ -25,6 +25,9 @@ import {NgxPaginationModule} from "ngx-pagination";
 import { MarkdownEditorMainComponent } from './components/admin-control/markdown/markdown-editor-main/markdown-editor-main.component';
 import { MarkdownEditorSaveComponent } from './components/admin-control/markdown/markdown-editor-save/markdown-editor-save.component';
 import { MarkdownEditorUpdateComponent } from './components/admin-control/markdown/markdown-editor-update/markdown-editor-update.component';
+import { MatProposalDialogComponent } from './components/common/dialogs/mat-proposal-dialog/mat-proposal-dialog.component';
+import { ReportComponent } from './components/common/report/report.component';
+import { AboutComponent } from './components/common/about/about.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { MarkdownEditorUpdateComponent } from './components/admin-control/markdo
     ProposalEditorMainComponent,
     MarkdownEditorMainComponent,
     MarkdownEditorSaveComponent,
-    MarkdownEditorUpdateComponent
+    MarkdownEditorUpdateComponent,
+    MatProposalDialogComponent,
+    ReportComponent,
+    AboutComponent
   ],
     imports: [
         BrowserModule,

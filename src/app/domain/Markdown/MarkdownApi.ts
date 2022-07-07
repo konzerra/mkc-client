@@ -8,7 +8,7 @@ export class MarkdownApi {
 
     getByIdFull: `${AppApi.server.protectedApi}/markdown/full/{id}`,
     getByName: `${AppApi.server.publicApi}/markdown/{name}`,
-    getAllPaginated: `${AppApi.server.protectedApi}/markdown/all/{pageNumber}/{pageSize}`,
+    getAllPaginated: `${AppApi.server.publicApi}/markdown/all/{pageNumber}/{pageSize}`,
 
   }
 }

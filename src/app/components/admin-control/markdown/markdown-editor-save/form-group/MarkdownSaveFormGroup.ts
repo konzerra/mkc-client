@@ -28,9 +28,11 @@ export class MarkdownSaveFormGroup
   }
 
   onLangChange(lang:string){
+
     let data = this.dataControlsList.find(data=>
       data.lang == lang
     )
+    console.log(data)
     if(data!=undefined){
       this.source = data.source
     }

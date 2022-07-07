@@ -15,6 +15,17 @@
           <a class="nav-link active" aria-current="page" routerLink = "/user/handbook">Справочник</a>
         </li>
 
+        <!-- Dropdown pages - markdown -->
+        <li class="nav-item dropdown ms-3" >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            О компании
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownPages">
+            <li><a class="dropdown-item" routerLink = "/about">О нас</a></li>
+            <li><a class="dropdown-item" routerLink = "/report">Годовой отчет</a></li>
+          </ul>
+        </li>
+
         <!-- Admin control -->
         <li class="nav-item dropdown ms-3" *ngIf="hasRole('Admin')">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -22,10 +33,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" routerLink = "/admin/journal/main">Продукты</a></li>
-            <li><a class="dropdown-item" routerLink = "/admin/category/main">Заявки</a></li>
+            <li><a class="dropdown-item" routerLink = "/admin/proposal/main">Заявки</a></li>
             <li><a class="dropdown-item" routerLink = "/admin/reviewer/main">Справочник</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/admin/reviewer/main">Страницы сайта</a></li>
+            <li><a class="dropdown-item" href="/admin/markdown/main">Страницы сайта</a></li>
           </ul>
         </li>
 

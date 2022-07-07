@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import {MatConfirmDialogComponent} from "./mat-confirm-dialog/mat-confirm-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
 import {MatInfoDialogComponent} from "./mat-info-dialog/mat-info-dialog.component";
+import {MatProposalDialogComponent} from "./mat-proposal-dialog/mat-proposal-dialog.component";
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +25,11 @@ export class DialogsService {
       data:{
         message:message
       }
+    })
+  }
+  openProposalDialog(){
+    return this.dialog.open(MatProposalDialogComponent,{
+      disableClose:true,
     })
   }
 }

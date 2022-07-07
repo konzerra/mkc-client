@@ -14,7 +14,7 @@
                 [formControl]="formGroup.name"
                 required
         >
-          <option value="" disabled selected hidden>Выберите статус</option>
+          <option value="" disabled selected hidden>Выберите страницу</option>
           <option *ngFor="let pageMarkdown of formGroup.pageMarkdowns"
                   [value]="pageMarkdown">{{pageMarkdown}}
           </option>
@@ -47,17 +47,18 @@
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label" for="name"> Markdown </label>
-        <input type="text"
-               id="name"
+        <label class="control-label" for="markdownText"> Markdown </label>
+        <textarea type="text"
+               id="markdownText"
                class="form-control"
-               [formControl]="formGroup.name"
+               [formControl]="formGroup.source"
                placeholder="Введите текст в формате markdown"
-               required autofocus="autofocus" />
-        <div *ngIf="checkFormControl(formGroup.name)"
+                  rows="10"
+                  required autofocus="autofocus" ></textarea>
+        <div *ngIf="checkFormControl(formGroup.source)"
              class="alert-danger">
 
-          <div *ngIf="formGroup.name.errors?.['required']">
+          <div *ngIf="formGroup.source.errors?.['required']">
             Введите текст в формате markdown
           </div>
 
