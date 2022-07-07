@@ -6,7 +6,7 @@ import {FormControl} from "@angular/forms";
 import {genericCheckFormControl} from "../../util/genericCheckFormControl";
 import {DataControlsAbstract} from "../../form-group/DataControlsAbstract";
 import {Router} from "@angular/router";
-import {JournalSaveDto} from "../../../domain/journal/dto/JournalSaveDto";
+
 import {DialogsService} from "../../../components/common/dialogs/dialogs.service";
 
 

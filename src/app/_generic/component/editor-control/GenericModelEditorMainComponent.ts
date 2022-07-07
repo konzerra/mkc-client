@@ -1,14 +1,10 @@
 import {Router} from "@angular/router";
-import {UseCaseGetAllAbstract} from "../../usecase/get/UseCaseGetAllAbstract";
 import {ModelI} from "../../model/ModelI";
-import {SaveDtoI} from "../../model/SaveDtoI";
-import {UpdateDtoI} from "../../model/UpdateDtoI";
 import {UseCaseDeleteByIdAbstract} from "../../usecase/UseCaseDeleteByIdAbstract";
 import {UseCaseGetAllPaginatedAbstract} from "../../usecase/get/UseCaseGetAllPaginatedAbstract";
 import {ModelPageI} from "../../model/ModelPageI";
-import {Journal} from "../../../domain/journal/Journal";
 import {DialogsService} from "../../../components/common/dialogs/dialogs.service";
-import {ComponentRoutingPaths} from "../../../components/ComponentRoutingPaths";
+
 
 export abstract class GenericModelEditorMainComponent
 < Model extends ModelI,

@@ -22,6 +22,9 @@ import {UserHandbookComponent} from "./components/user-control/user-handbook/use
 import { ProposalEditorMainComponent } from './components/admin-control/proposal/proposal-editor-main/proposal-editor-main.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {NgxPaginationModule} from "ngx-pagination";
+import { MarkdownEditorMainComponent } from './components/admin-control/markdown/markdown-editor-main/markdown-editor-main.component';
+import { MarkdownEditorSaveComponent } from './components/admin-control/markdown/markdown-editor-save/markdown-editor-save.component';
+import { MarkdownEditorUpdateComponent } from './components/admin-control/markdown/markdown-editor-update/markdown-editor-update.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import {NgxPaginationModule} from "ngx-pagination";
     UserRegisterComponent,
     UserLoginComponent,
     UserHandbookComponent,
-    ProposalEditorMainComponent
+    ProposalEditorMainComponent,
+    MarkdownEditorMainComponent,
+    MarkdownEditorSaveComponent,
+    MarkdownEditorUpdateComponent
   ],
     imports: [
         BrowserModule,

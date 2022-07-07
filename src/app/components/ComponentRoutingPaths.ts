@@ -16,6 +16,11 @@ export class ComponentRoutingPaths {
       save: "admin/product/save",
       update: "admin/product/update"
     },
+    markdown : {
+      main: "admin/markdown/main",
+      save: "admin/markdown/save",
+      update: "admin/markdown/update"
+    },
 
     tips:{
       main: "admin/tips/main",
