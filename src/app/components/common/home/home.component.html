@@ -15,7 +15,7 @@
               (click)="onProposal()" > Оставить заявку </button>
     </section>
 
-    <section id="#journal">
+    <section id="#aboutCompany">
       <div class = "container-fluid" >
         <div class=" row mt-5 ms-5 mb-5">
           <div class="col-sm-4 mt-5 ms-5 mb-5">
@@ -46,7 +46,7 @@
       </div>
     </section>
 
-    <section id="#publish" class="pt-5">
+    <section id="#products" class="pt-5">
       <h1 class="align-text-top align-self-center mt-5">Продукты компании</h1>
       <div class="pb-5">
         <div class="row mt-2 ms-5 ">
@@ -76,6 +76,54 @@
               <h4 class="mt-3">Продукт №3</h4>
               <h6 class="mt-1">описание</h6>
               <i class=" bi bi-credit-card panel-icon"></i>
+              <br class="mb-5">
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </section>
+
+    <section id="#calculator" class="pt-5">
+      <h1 class="align-text-top align-self-center mt-5">Кредитный калькулятор</h1>
+      <div class="pb-5">
+        <div class="row mt-2 ms-5 ">
+          <div class="col-lg-6 ">
+
+            <div class="panel ms-0 me-5 mt-5 ps-3 pe-3">
+              <br>
+              <div class="form-group">
+                <label class = "mt-2">Продукт</label>
+                <select class="form-control select"
+
+                        id="category"
+                        [formControl]="selectedProduct"
+                        required
+                >
+                  <option value="null" disabled selected>Выберите продукт</option>
+                  <option *ngFor="let product of products"
+                          [value]="product">{{product.name}}
+                  </option>
+                </select>
+
+              </div>
+              <label for="amountRange" class="form-label ">Сумма</label>
+              <input type="range" class="form-range" min="0" max="5" id="amountRange">
+              <label for="durationRange" class="form-label">Длительность</label>
+              <input type="range" class="form-range" min="0" max="5" id="durationRange">
+              <label for="durationRange" class="form-label">Проценты: {{selectedProduct.value?.percent || 0}}%</label>
+              <br class="mb-5">
+              <br>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="panel ms-0 me-5 mt-5 ps-3 pe-3">
+              <br>
+              <label class="form-label ">Сумма</label>
+              <h3>0</h3>
+              <label class="form-label ">Ежемесячный платеж</label>
+              <h3>0</h3>
               <br class="mb-5">
               <br>
             </div>

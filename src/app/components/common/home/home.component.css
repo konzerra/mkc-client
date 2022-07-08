@@ -46,12 +46,12 @@ section#\#gates{
   background-blend-mode: multiply;
 }
 
-section#\#journal{
+section#\#aboutCompany{
   background-color: #3e4242;
 
 }
 
-section#\#publish{
+section#\#products{
   background: rgba(58, 58, 58, 0.6)
   url("../../../../assets/images/bank.jpg") no-repeat fixed center center/cover ;
   background-blend-mode: multiply;
@@ -67,14 +67,12 @@ section#\#publish{
 }
 
 .panel{
-  min-width: 250px;
-  max-width: 350px;
+
   border-radius: 5%;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-style: italic;
-  font-weight: bold;
+
   background-color: rgb(10, 98, 191,0.5);
   transition: 2s
 }
@@ -120,4 +118,7 @@ h6{
     rgba(29, 236, 197, 0.5),
     rgba(91, 14, 214, 0.5) 100%
   );
+}
+.select{
+  background-color: transparent;
 }
