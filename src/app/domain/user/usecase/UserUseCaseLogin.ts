@@ -14,7 +14,7 @@ export class UserUseCaseLogin {
   ) { }
 
   execute(loginDto:UserLoginDto){
-    return this.httpClient.post<JwtDto>(UserApi.paths.login+"/ru", loginDto, {
+    return this.httpClient.post<JwtDto>(UserApi.paths.login, loginDto, {
       headers: this.requestHeader,
     })
   }

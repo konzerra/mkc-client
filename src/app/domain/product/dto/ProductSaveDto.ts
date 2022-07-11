@@ -1,6 +1,5 @@
 
-export interface Product {
-  id: Number,
+export interface ProductSaveDto {
   active: boolean,
   min_sum: Number,
   max_sum: Number,
@@ -9,5 +8,4 @@ export interface Product {
   percent: Number,
   name: string,
   overview: string
-
 }
