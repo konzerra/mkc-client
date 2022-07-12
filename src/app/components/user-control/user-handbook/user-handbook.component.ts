@@ -16,18 +16,18 @@ export class UserHandbookComponent implements OnInit {
   tips = new Array<Tip>(
     {
       id:0,
-      question:"How to do that?",
-      answer:"That's how we do that"
+      question:"Какие докумуенты нужны?",
+      answer:"Id карта"
     },
     {
       id:2,
-      question:"How to do that?",
-      answer:"That's how we do that"
+      question:"Цена последней версии Iphone?",
+      answer:"87 000 сом"
     },
     {
       id:3,
-      question:"How to do that?",
-      answer:"That's how we do that"
+      question:"Какие проценты по кредитам?",
+      answer:"Зависит от продуктов"
     },
   );
 }

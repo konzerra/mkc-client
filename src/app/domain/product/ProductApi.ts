@@ -7,6 +7,6 @@ export class ProductApi {
     update: `${AppApi.server.protectedApi}/product`,
 
     getAllPaginated: `${AppApi.server.protectedApi}/product/all/{pageNumber}/{pageSize}`,
-
+    getAll: `${AppApi.server.protectedApi}/product/all`
   }
 }
