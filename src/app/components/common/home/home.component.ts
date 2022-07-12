@@ -11,6 +11,8 @@ import {Product} from "../../../domain/product/Product";
 export class HomeComponent implements OnInit {
 
   products = new Array<Product>()
+
+
   selectedProduct = new FormControl<Product | null>(null)
 
   constructor(
@@ -18,6 +20,13 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.products.push({
+      active: true, id: 1, max_duration: 24, max_sum:150000, min_duration: 6, min_sum: 50000, name: "Общий кредит", overview: "", percent: 18
+    })
+    this.products.push({
+      active: true, id: 2, max_duration: 32, max_sum:250000, min_duration: 12, min_sum: 50000, name: "Агро-кредит", overview: "", percent: 14
+    })
+    this.selectedProduct.setValue(this.products[0])
   }
 
   onProposal() {

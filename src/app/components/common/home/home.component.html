@@ -109,9 +109,9 @@
 
               </div>
               <label for="amountRange" class="form-label ">Сумма</label>
-              <input type="range" class="form-range" min="0" max="5" id="amountRange">
+              <input type="range" class="form-range" [min]="selectedProduct.value?.min_sum || 0" [max]="selectedProduct.value?.max_sum || 0" id="amountRange">
               <label for="durationRange" class="form-label">Длительность</label>
-              <input type="range" class="form-range" min="0" max="5" id="durationRange">
+              <input type="range" class="form-range" [min]="selectedProduct.value?.min_duration || 0" [max]="selectedProduct.value?.max_duration || 0" id="durationRange">
               <label for="durationRange" class="form-label">Проценты: {{selectedProduct.value?.percent || 0}}%</label>
               <br class="mb-5">
               <br>
